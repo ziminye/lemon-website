@@ -16,8 +16,7 @@ git commit -m "注释"就行
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+增加babel-polyfill，同时删除babel-plugin-transform-runtime
 
 # serve with hot reload at localhost:8080
 npm run dev
