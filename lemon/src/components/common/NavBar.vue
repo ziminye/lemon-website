@@ -6,7 +6,7 @@
 <!--        logo+定位（待实现） -->
         <div id="together">
           <div id="myLOGO">
-              <img id="logo" src="../../assets/logo.png">
+<!--              <img id="logo" src="">-->
           </div>
           <div id="position">
             <el-dropdown trigger="click" >
@@ -14,7 +14,7 @@
                 <i class="el-icon-position"></i>定位
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item class="menuItem" v-for="pro,index in provinces" :key="index">{{pro}}</el-dropdown-item>
+                <el-dropdown-item class="menuItem" v-for="(pro,index) in provinces" :key="index">{{pro}}</el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
           </div>
@@ -33,13 +33,13 @@
 
 <!--        手机端显示 （变下拉菜单) -->
         <el-dropdown trigger="click" id="menu">
-        <span class="el-dropdown-link">
-          <img src="../../assets/Menu.svg" style="width: 30px;">
-        </span>
+            <span class="el-dropdown-link">
+              <img src="../../assets/Menu.svg" style="width: 30px;">
+            </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item class="menuItem" v-for="tab,index in phoneTabs" :key="index"><router-link :to="tab.href">{{tab.value}}</router-link></el-dropdown-item>
+              <el-dropdown-item class="menuItem" v-for="(tab,index) in phoneTabs" :key="index"><router-link :to="tab.href">{{tab.value}}</router-link></el-dropdown-item>
             </el-dropdown-menu>
-          </el-dropdown>
+        </el-dropdown>
       </div>
     </el-header>
   </el-container>
@@ -108,7 +108,7 @@
   }
   .nav_bar_item{
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
   }
   li{
@@ -119,7 +119,6 @@
     text-align: center;
     overflow: auto;
     margin: 0 auto;
-
   }
   .el-header {
     color: #333;

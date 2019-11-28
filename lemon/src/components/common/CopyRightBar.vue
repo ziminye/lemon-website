@@ -21,11 +21,13 @@
 <style scoped>
   footer{
     width:100%;
-    border-top: 2px solid #95a5a6;
     text-align: center;
+    background-color: #35A99D;
+    height: 80px;
+    color: white;
   }
   #footerBar{
-    margin-top: 20px;
+    padding-top: 20px;
   }
   span,address{
     margin:10px;

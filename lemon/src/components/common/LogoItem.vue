@@ -1,10 +1,9 @@
 <template>
 <div class="demo-image">
-    <span class="demonstration">{{ fit }}</span>
     <el-image
       style="width: 100px; height: 100px"
       :src="itemUrl"
-      :fit="fit"></el-image>
+      fit="fit"></el-image>
   </div>
 </template>
 
@@ -26,3 +25,8 @@
         }
     }
 </script>
+
+<style scoped>
+  .demo-image{
+  }
+</style>

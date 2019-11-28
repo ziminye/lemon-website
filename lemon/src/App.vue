@@ -20,4 +20,9 @@
 
 <style>
   @import "assets/css/base.css";
+  html,body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
 </style>
